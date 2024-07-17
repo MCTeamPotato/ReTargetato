@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "com.teampotato.retargetato.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "ReTargetato.refmap.json",
+  "refmap": "retargetato.refmap.json",
   "mixins": [
     "MixinMobEntity"
   ],

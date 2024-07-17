@@ -31,8 +31,8 @@ public class ReTargetato {
         MOB_LIST = CONFIG_BUILDER.defineList("mobList", Lists.newArrayList(), o -> o instanceof String);
         CONFIG_BUILDER.pop();
         CONFIG_BUILDER.push("Advanced Filter");
-        FILTERED_MOB_LIST = CONFIG_BUILDER.defineList("filteredMobList", Lists.newArrayList(), o -> o instanceof String);
-        FILTERED_TARGET_LIST = CONFIG_BUILDER.defineList("filteredTargetList", Lists.newArrayList(), o -> o instanceof String);
+        FILTERED_MOB_LIST = CONFIG_BUILDER.defineList("filteredMobList", Lists.newArrayList("minecraft:piglin", "minecraft:piglin_brute"), o -> o instanceof String);
+        FILTERED_TARGET_LIST = CONFIG_BUILDER.defineList("filteredTargetList", Lists.newArrayList("minecraft:wither_skeleton", "minecraft:wither_skeleton"), o -> o instanceof String);
         CONFIG_BUILDER.pop();
         COMMON_CONFIG = CONFIG_BUILDER.build();
     }
